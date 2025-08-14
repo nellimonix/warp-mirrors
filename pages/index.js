@@ -10,7 +10,7 @@ export default function Home() {
 
     return (
     <div className="container">
-      <h1>WARP Configuration Generator</h1>
+      <h1>WARP Generator</h1>
       <p>Выберите зеркало:</p>
       <div className="buttons">
         {mirrors.map((mirror, index) => (
