@@ -7,7 +7,7 @@ export default function Home() {
     { name: "warp.pages.dev", url: "https://warp.pages.dev" },
   ];
 
-  return (
+    return (
     <div className="container">
       <h1>WARP Configuration Generator</h1>
       <p>Выберите зеркало:</p>
@@ -30,6 +30,8 @@ export default function Home() {
           margin: 0;
           padding: 0;
           height: 100%;
+          overflow: hidden; /* полностью убираем скролл */
+          background-color: #1e1e1e; /* тёмный фон */
         }
         .container {
           display: flex;
@@ -37,19 +39,17 @@ export default function Home() {
           align-items: center;
           justify-content: center;
           height: 100vh;
-          background-color: #ffffff; /* светлый фон, как у Telegram */
-          color: #000000;
+          width: 100%;
+          color: #ffffff;
           font-family: Arial, sans-serif;
           text-align: center;
         }
         h1 {
-          margin: 0;
-          margin-bottom: 15px;
+          margin: 0 0 15px 0;
           font-size: 2rem;
         }
         p {
-          margin: 0;
-          margin-bottom: 25px;
+          margin: 0 0 25px 0;
           font-size: 1.1rem;
         }
         .buttons {
@@ -59,7 +59,7 @@ export default function Home() {
         }
         .button {
           padding: 12px 20px;
-          background-color: #0088cc; /* Telegram синий */
+          background-color: #0088cc; /* телеграмовский синий */
           color: white;
           border-radius: 6px;
           text-decoration: none;
