@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <div className="container">
       <h1>WARP Configuration Generator</h1>
-      <p>Выберите зеркало для генерации конфигурации:</p>
+      <p>Выберите зеркало:</p>
       <div className="buttons">
         {mirrors.map((mirror, index) => (
           <a
             key={index}
-            href={mirror.path}
+            href={mirror.url}
             target="_blank"
             rel="noopener noreferrer"
             className="button"
@@ -26,42 +26,44 @@ export default function Home() {
       </div>
 
       <style jsx>{`
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+        }
         .container {
-          background-color: #121212;
-          color: #ffffff;
-          min-height: 100vh;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          height: 100vh;
+          background-color: #ffffff; /* светлый фон, как у Telegram */
+          color: #000000;
           font-family: Arial, sans-serif;
-          padding: 20px;
+          text-align: center;
         }
         h1 {
-          font-size: 2.5rem;
+          margin: 0;
+          margin-bottom: 15px;
+          font-size: 2rem;
         }
         p {
-          margin-top: 10px;
-          font-size: 1.2rem;
+          margin: 0;
+          margin-bottom: 25px;
+          font-size: 1.1rem;
         }
         .buttons {
           display: flex;
           flex-direction: column;
-          gap: 15px;
-          margin-top: 30px;
+          gap: 12px;
         }
         .button {
-          padding: 15px 25px;
-          background-color: #4f46e5;
+          padding: 12px 20px;
+          background-color: #0088cc; /* Telegram синий */
           color: white;
-          border-radius: 10px;
+          border-radius: 6px;
           text-decoration: none;
           font-weight: bold;
-          transition: transform 0.2s, background-color 0.2s;
-        }
-        .button:hover {
-          transform: scale(1.05);
-          background-color: #3730a3;
         }
       `}</style>
     </div>
