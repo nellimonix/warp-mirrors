@@ -1,10 +1,10 @@
 export default function Home() {
   const mirrors = [
-    { name: "Warp Generator Bot", path: "/mirror/telegram" },
-    { name: "warp.llimonix.pw", path: "/mirror/warp_llimonix" },
-    { name: "warply.vercel.app", path: "/mirror/warply_vercel" },
-    { name: "getwarp.netlify.app", path: "/mirror/getwarp_netlify" },
-    { name: "warp.pages.dev", path: "/mirror/warp_pages" },
+    { name: "Warp Generator Bot", url: "https://t.me/warp_generator_bot" },
+    { name: "warp.llimonix.pw", url: "https://warp.llimonix.pw" },
+    { name: "warply.vercel.app", url: "https://warply.vercel.app" },
+    { name: "getwarp.netlify.app", url: "https://getwarp.netlify.app" },
+    { name: "warp.pages.dev", url: "https://warp.pages.dev" },
   ];
 
   return (
