@@ -13,17 +13,62 @@ export default function Home() {
       <h1>WARP Generator</h1>
       <p>Выберите зеркало:</p>
       <div className="buttons">
-        {mirrors.map((mirror, index) => (
+        <div className="bot-section">
           <a
-            key={index}
-            href={mirror.url}
+            href={mirrors[0].url}
             target="_blank"
             rel="noopener noreferrer"
             className="button"
           >
-            {mirror.name}
+            {mirrors[0].name}
           </a>
-        ))}
+        </div>
+        
+        <div className="sites-grid">
+          <a
+            href={mirrors[1].url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button"
+          >
+            {mirrors[1].name}
+          </a>
+          <a
+            href={mirrors[2].url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button"
+          >
+            {mirrors[2].name}
+          </a>
+          <a
+            href={mirrors[3].url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button"
+          >
+            {mirrors[3].name}
+          </a>
+          <a
+            href={mirrors[4].url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button"
+          >
+            {mirrors[4].name}
+          </a>
+        </div>
+        
+        <div className="telegram-section">
+          <a
+            href={mirrors[5].url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button"
+          >
+            {mirrors[5].name}
+          </a>
+        </div>
       </div>
 
       <style jsx>{`
@@ -71,9 +116,43 @@ export default function Home() {
         .buttons {
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 20px;
           max-height: 60vh;
           overflow: hidden;
+        }
+        .bot-section {
+          display: flex;
+          justify-content: center;
+        }
+        .bot-section .button {
+          width: 100%;
+          max-width: calc(2 * 200px + 12px);
+        }
+        .sites-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+          width: 100%;
+          max-width: calc(2 * 200px + 12px);
+        }
+        .telegram-section {
+          display: flex;
+          justify-content: center;
+        }
+        .telegram-section .button {
+          width: 100%;
+          max-width: calc(2 * 200px + 12px);
+        }
+        @media (max-width: 768px) {
+          .buttons {
+            flex-direction: column;
+            gap: 12px;
+          }
+          .sites-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+          }
         }
         .button {
           padding: 12px 20px;
