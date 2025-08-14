@@ -4,7 +4,7 @@ export default function Home() {
     { name: "warp.llimonix.pw", url: "https://warp.llimonix.pw" },
     { name: "warply.vercel.app", url: "https://warply.vercel.app" },
     { name: "getwarp.netlify.app", url: "https://getwarp.netlify.app" },
-    { name: "warp.pages.dev", url: "https://warp.pages.dev" },
+    { name: "getwarp.pages.dev", url: "https://getwarp.pages.dev" },
   ];
 
     return (
