@@ -1,6 +1,6 @@
 export default function Home() {
   const mirrors = [
-    { name: "Telegram Bot", path: "/mirror/telegram" },
+    { name: "Warp Generator Bot", path: "/mirror/telegram" },
     { name: "warp.llimonix.pw", path: "/mirror/warp_llimonix" },
     { name: "warply.vercel.app", path: "/mirror/warply_vercel" },
     { name: "getwarp.netlify.app", path: "/mirror/getwarp_netlify" },
