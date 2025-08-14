@@ -1,38 +1,17 @@
 {
   "version": 2,
-  "name": "warp-mirrors",
+  "name": "warp-generator",
   "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
+    { "src": "package.json", "use": "@vercel/next" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
+    { "src": "/(.*)", "dest": "/$1" }
   ],
   "rewrites": [
-    {
-      "source": "/mirror/warp_llimonix",
-      "destination": "https://warp.llimonix.pw"
-    },
-    {
-      "source": "/mirror/warply_vercel",
-      "destination": "https://warply.vercel.app"
-    },
-    {
-      "source": "/mirror/getwarp_netlify",
-      "destination": "https://getwarp.netlify.app"
-    },
-    {
-      "source": "/mirror/warp_pages",
-      "destination": "https://warp.pages.dev"
-    },
-    {
-      "source": "/mirror/telegram",
-      "destination": "https://t.me/warp_generator_bot"
-    }
+    { "source": "/mirror/warp_llimonix", "destination": "https://warp.llimonix.pw" },
+    { "source": "/mirror/warply_vercel", "destination": "https://warply.vercel.app" },
+    { "source": "/mirror/getwarp_netlify", "destination": "https://getwarp.netlify.app" },
+    { "source": "/mirror/warp_pages", "destination": "https://warp.pages.dev" },
+    { "source": "/mirror/telegram", "destination": "https://t.me/warp_generator_bot" }
   ]
 }
