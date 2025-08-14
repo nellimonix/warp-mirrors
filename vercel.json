@@ -4,9 +4,6 @@
   "builds": [
     { "src": "package.json", "use": "@vercel/next" }
   ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
-  ],
   "rewrites": [
     { "source": "/mirror/warp_llimonix", "destination": "https://warp.llimonix.pw" },
     { "source": "/mirror/warply_vercel", "destination": "https://warply.vercel.app" },
