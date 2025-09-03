@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Warp Generator Bot",
+    "url": "https://t.me/warp_generator_bot",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+    "description": "Telegram бот для генерации"
+  },
+  {
+    "name": "Telegram канал",
+    "url": "https://t.me/+AHQ8AvLKnKtiYWRi",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+    "description": "Новости и обновления"
+  },
+  {
+    "name": "warp.llimonix.pw",
+    "url": "https://warp.llimonix.pw",
+    "avatar": "/cloud.ico",
+    "description": "Основное зеркало"
+  },
+  {
+    "name": "warply.vercel.app",
+    "url": "https://warply.vercel.app",
+    "avatar": "/vercel.ico",
+    "description": "Vercel хостинг"
+  },
+  {
+    "name": "getwarp.netlify.app",
+    "url": "https://getwarp.netlify.app",
+    "avatar": "/netlify.ico",
+    "description": "Netlify хостинг"
+  },
+  {
+    "name": "getwarp.pages.dev",
+    "url": "https://getwarp.pages.dev",
+    "avatar": "/cloudflare.ico",
+    "description": "Cloudflare Pages"
+  }
+]
