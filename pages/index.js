@@ -20,13 +20,21 @@ export default function Home() {
                 className="mirror-block"
               >
                 <div className="block-inner">
+                  {mirror.warning && (
+                    <div className="warning-badge">
+                      {mirror.warning}
+                    </div>
+                  )}
+
                   <div className="avatar">
                     <img src={mirror.avatar} alt={mirror.name} />
                   </div>
+
                   <div className="content">
                     <h3>{mirror.name}</h3>
                     <p>{mirror.description}</p>
                   </div>
+
                   <div className="arrow">›</div>
                 </div>
               </a>

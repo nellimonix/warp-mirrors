@@ -12,10 +12,17 @@
     "description": "Новости и обновления"
   },
   {
+    "name": "warp.llimonix.pw",
+    "url": "https://warp.llimonix.pw",
+    "avatar": "/cloud.ico",
+    "description": "Основное зеркало"
+  },
+  {
     "name": "warp.llimonix.dev",
     "url": "https://warp.llimonix.dev",
     "avatar": "/cloud.ico",
-    "description": "Основное зеркало"
+    "description": "Основное зеркало 2",
+    "warning": "Заблокировано Роскомнадзором"
   },
   {
     "name": "warply.vercel.app",

@@ -294,6 +294,21 @@ body::-webkit-scrollbar {
   margin: 0;
 }
 
+.warning-badge {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #ff4d4f;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+}
+
 @media (max-width: 768px) {
   .main-content {
     padding: 30px 15px;
