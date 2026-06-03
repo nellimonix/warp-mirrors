@@ -11,11 +11,11 @@
     "avatar": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
     "description": "Новости и обновления"
   },
-    {
+  {
     "name": "Основное зеркало",
-    "url": "https://warp2.llimonix.pw",
+    "url": "https://warp3.llimonix.pw",
     "avatar": "/cloud.ico",
-    "description": "warp2.llimonix.pw"
+    "description": "warp3.llimonix.pw"
   },
   {
     "name": "Vercel хостинг",
@@ -37,37 +37,9 @@
   },
   {
     "name": "Основное зеркало",
-    "url": "https://warp.llimonix.pw",
+    "url": "https://warp2.llimonix.pw",
     "avatar": "/cloud.ico",
-    "description": "warp.llimonix.pw",
-    "warning": "Заблокировано Роскомнадзором"
-  },
-  {
-    "name": "Основное зеркало 2",
-    "url": "https://warp.llimonix.dev",
-    "avatar": "/cloud.ico",
-    "description": "warp.llimonix.dev",
-    "warning": "Заблокировано Роскомнадзором"
-  },
-  {
-    "name": "Vercel хостинг",
-    "url": "https://warply.vercel.app",
-    "avatar": "/vercel.ico",
-    "description": "warply.vercel.app",
-    "warning": "Заблокировано Роскомнадзором"
-  },
-  {
-    "name": "Netlify хостинг",
-    "url": "https://getwarp.netlify.app",
-    "avatar": "/netlify.ico",
-    "description": "getwarp.netlify.app",
-    "warning": "Заблокировано Роскомнадзором"
-  },
-  {
-    "name": "Cloudflare Pages",
-    "url": "https://getwarp.pages.dev",
-    "avatar": "/cloudflare.ico",
-    "description": "getwarp.pages.dev",
+    "description": "warp2.llimonix.pw",
     "warning": "Заблокировано Роскомнадзором"
   }
 ]
