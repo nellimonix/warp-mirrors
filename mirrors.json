@@ -19,15 +19,15 @@
   },
   {
     "name": "Vercel хостинг",
-    "url": "https://warply2.vercel.app",
+    "url": "https://warply3.vercel.app",
     "avatar": "/vercel.ico",
-    "description": "warply2.vercel.app"
+    "description": "warply3.vercel.app"
   },
   {
     "name": "Netlify хостинг",
-    "url": "https://getwarp2.netlify.app",
+    "url": "https://getwarp3.netlify.app",
     "avatar": "/netlify.ico",
-    "description": "getwarp2.netlify.app"
+    "description": "getwarp3.netlify.app"
   },
   {
     "name": "Cloudflare Workers",
@@ -40,6 +40,20 @@
     "url": "https://warp2.llimonix.pw",
     "avatar": "/cloud.ico",
     "description": "warp2.llimonix.pw",
+    "warning": "Заблокировано Роскомнадзором"
+  },
+  {
+    "name": "Vercel хостинг",
+    "url": "https://warply2.vercel.app",
+    "avatar": "/vercel.ico",
+    "description": "warply2.vercel.app",
+    "warning": "Заблокировано Роскомнадзором"
+  },
+  {
+    "name": "Netlify хостинг",
+    "url": "https://getwarp2.netlify.app",
+    "avatar": "/netlify.ico",
+    "description": "getwarp2.netlify.app",
     "warning": "Заблокировано Роскомнадзором"
   }
 ]
