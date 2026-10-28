@@ -13,9 +13,9 @@
   },
   {
     "name": "Основное зеркало",
-    "url": "https://warp3.llimonix.pw",
+    "url": "https://warp4.llimonix.pw",
     "avatar": "/cloud.ico",
-    "description": "warp3.llimonix.pw"
+    "description": "warp4.llimonix.pw"
   },
   {
     "name": "Vercel хостинг",
@@ -34,6 +34,13 @@
     "url": "https://warp.llimonix.workers.dev",
     "avatar": "/cloudflare.ico",
     "description": "warp.llimonix.workers.dev"
+  },
+  {
+    "name": "Основное зеркало",
+    "url": "https://warp3.llimonix.pw",
+    "avatar": "/cloud.ico",
+    "description": "warp3.llimonix.pw",
+    "warning": "Заблокировано Роскомнадзором"
   },
   {
     "name": "Основное зеркало",
