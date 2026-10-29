@@ -19,9 +19,9 @@
   },
   {
     "name": "Vercel хостинг",
-    "url": "https://warply3.vercel.app",
+    "url": "https://warply4.vercel.app",
     "avatar": "/vercel.ico",
-    "description": "warply3.vercel.app"
+    "description": "warply4.vercel.app"
   },
   {
     "name": "Netlify хостинг",
@@ -41,6 +41,13 @@
     "avatar": "/cloud.ico",
     "description": "warp3.llimonix.pw",
     "warning": "Заблокировано Роскомнадзором"
+  },
+  {
+    "name": "Vercel хостинг",
+    "url": "https://warply3.vercel.app",
+    "avatar": "/vercel.ico",
+    "description": "warply3.vercel.app",
+    "warning": "Заблокировали аккаунт Vercel"
   },
   {
     "name": "Основное зеркало",
