@@ -13,9 +13,9 @@
   },
   {
     "name": "Основное зеркало",
-    "url": "https://warp4.llimonix.pw",
+    "url": "https://warp5.llimonix.pw",
     "avatar": "/cloud.ico",
-    "description": "warp4.llimonix.pw"
+    "description": "warp5.llimonix.pw"
   },
   {
     "name": "Vercel хостинг",
@@ -37,9 +37,9 @@
   },
   {
     "name": "Основное зеркало",
-    "url": "https://warp3.llimonix.pw",
+    "url": "https://warp4.llimonix.pw",
     "avatar": "/cloud.ico",
-    "description": "warp3.llimonix.pw",
+    "description": "warp4.llimonix.pw",
     "warning": "Заблокировано Роскомнадзором"
   },
   {
@@ -48,26 +48,5 @@
     "avatar": "/vercel.ico",
     "description": "warply3.vercel.app",
     "warning": "Заблокировали аккаунт Vercel"
-  },
-  {
-    "name": "Основное зеркало",
-    "url": "https://warp2.llimonix.pw",
-    "avatar": "/cloud.ico",
-    "description": "warp2.llimonix.pw",
-    "warning": "Заблокировано Роскомнадзором"
-  },
-  {
-    "name": "Vercel хостинг",
-    "url": "https://warply2.vercel.app",
-    "avatar": "/vercel.ico",
-    "description": "warply2.vercel.app",
-    "warning": "Заблокировано Роскомнадзором"
-  },
-  {
-    "name": "Netlify хостинг",
-    "url": "https://getwarp2.netlify.app",
-    "avatar": "/netlify.ico",
-    "description": "getwarp2.netlify.app",
-    "warning": "Заблокировано Роскомнадзором"
   }
 ]
