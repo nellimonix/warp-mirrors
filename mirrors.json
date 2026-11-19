@@ -25,7 +25,7 @@
   },
   {
     "name": "Netlify хостинг",
-    "url": "https://getwarp3.netlify.app",
+    "url": "https://warply.netlify.app",
     "avatar": "/netlify.ico",
     "description": "getwarp3.netlify.app"
   },
@@ -34,19 +34,5 @@
     "url": "https://warp.llimonix.workers.dev",
     "avatar": "/cloudflare.ico",
     "description": "warp.llimonix.workers.dev"
-  },
-  {
-    "name": "Основное зеркало",
-    "url": "https://warp7.llimonix.pw",
-    "avatar": "/cloud.ico",
-    "description": "warp7.llimonix.pw",
-    "warning": "Заблокировано Роскомнадзором"
-  },
-  {
-    "name": "Vercel хостинг",
-    "url": "https://warply3.vercel.app",
-    "avatar": "/vercel.ico",
-    "description": "warply3.vercel.app",
-    "warning": "Заблокировали аккаунт Vercel"
   }
 ]
