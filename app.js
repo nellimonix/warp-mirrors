@@ -1,3 +1,8 @@
+function decodeBase64(value) {
+  const bytes = Uint8Array.from(atob(value), (character) => character.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
 function resolveAvatar(src) {
   if (!src) return src;
   if (/^https?:\/\//.test(src)) return src;
@@ -5,59 +10,60 @@ function resolveAvatar(src) {
 }
 
 function createMirrorBlock(mirror) {
-  const link = document.createElement('a');
-  link.className = 'mirror-block';
-  link.href = mirror.url;
-  link.target = '_blank';
-  link.rel = 'noopener noreferrer';
+  const button = document.createElement('button');
+  button.className = 'mirror-block';
+  button.type = 'button';
+  button.addEventListener('click', () => {
+    const destination = new URL(decodeBase64(mirror.url));
+    if (destination.protocol === 'https:') {
+      window.open(destination.href, '_blank', 'noopener,noreferrer');
+    }
+  });
 
-  const inner = document.createElement('div');
+  const inner = document.createElement('span');
   inner.className = 'block-inner';
 
   if (mirror.warning) {
-    const badge = document.createElement('div');
+    const badge = document.createElement('span');
     badge.className = 'warning-badge';
     badge.textContent = mirror.warning;
     inner.appendChild(badge);
   }
 
-  const avatar = document.createElement('div');
+  const avatar = document.createElement('span');
   avatar.className = 'avatar';
   const img = document.createElement('img');
   img.src = resolveAvatar(mirror.avatar);
-  img.alt = mirror.name;
+  img.alt = '';
   avatar.appendChild(img);
 
-  const content = document.createElement('div');
-  content.className = 'content';
-  const title = document.createElement('h3');
+  const title = document.createElement('span');
+  title.className = 'mirror-title';
   title.textContent = mirror.name;
-  const desc = document.createElement('p');
-  desc.textContent = mirror.description;
-  content.appendChild(title);
-  content.appendChild(desc);
 
-  const arrow = document.createElement('div');
+  const arrow = document.createElement('span');
   arrow.className = 'arrow';
+  arrow.setAttribute('aria-hidden', 'true');
   arrow.textContent = '›';
 
   inner.appendChild(avatar);
-  inner.appendChild(content);
+  inner.appendChild(title);
   inner.appendChild(arrow);
-  link.appendChild(inner);
-  return link;
+  button.appendChild(inner);
+  return button;
 }
 
 async function loadMirrors() {
   const grid = document.getElementById('mirrors-grid');
   try {
-    const res = await fetch('mirrors.json', { cache: 'no-cache' });
+    const res = await fetch('mirrors.json?v=2', { cache: 'no-cache' });
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    const mirrors = await res.json();
+    const { catalog } = await res.json();
+    const mirrors = JSON.parse(decodeBase64(catalog));
     const frag = document.createDocumentFragment();
     mirrors.forEach((mirror) => frag.appendChild(createMirrorBlock(mirror)));
     grid.appendChild(frag);
-  } catch (e) {
+  } catch {
     const error = document.createElement('p');
     error.className = 'load-error';
     error.textContent = 'Не удалось загрузить список зеркал';
